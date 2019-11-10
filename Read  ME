@@ -1,0 +1,2 @@
+download 
+- npm install -> npm start (in frontend) *if still can't run add more npm (npm install react-bootstrap bootstrap) 
