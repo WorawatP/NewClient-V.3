@@ -71,12 +71,12 @@ export default class Home extends Component {
         if (data) {
             return data.map((e, i) => {
                 return <div key={i} id="info2" style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-                    <div style={{ width: '13.5%' }} > {e.id}</div>
-                    <div style={{ width: '13.5%' }} > {e.name}</div>
-                    <div style={{ width: '13%' }} > {e.Address}</div>
-                    <div style={{ width: '13.3%' }} > {e.Time}</div>
-                    <div style={{ width: '13.5%' }} > {e.order}</div>
-                    <Button variant="outline-danger" onClick={() => this.deleteOrders(e.id)} style={{ width: '7%' }} ><i class ="fa fa-trash"></i></Button>
+                    <div style={{ width: '12%' }} > {e.id}</div>
+                    <div style={{ width: '10%' }} > {e.name}</div>
+                    <div style={{ width: '18%' }} > {e.Address}</div>
+                    <div style={{ width: '7%' }} > {e.Time}</div>
+                    <div style={{ width: '18%' }} > {e.order}</div>
+                    <Button id = 'od1' variant="outline-danger" onClick={() => this.deleteOrders(e.id)} style={{ width: '7%' }} ><i class ="fa fa-trash"></i></Button>
                     <Button variant="outline-warning" onClick={() => this.updateOrders(e.id, e)} style={{ width: '7%' }} ><i class="fa fa-edit"></i></Button>
                 </div>
             })
@@ -94,21 +94,21 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div style={{ paddingTop: 85,width: '90%', marginLeft: '5%' }}>
-                <div id="inputtap" style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-                    <input value={this.state.name} onChange={e => this.setState({ name: e.target.value })} />
-                    <input value={this.state.Address} onChange={e => this.setState({ Address: e.target.value })} />
-                    <input type="time" value={this.state.Time} onChange={e => this.setState({ Time: e.target.value })} />
-                    <input value={this.state.order} onChange={e => this.setState({ order: e.target.value })} />
-                    <Button variant="primary" onClick={() => this.onSubmit()}>submit</Button>
+            <div style={{ paddingTop: 20,width: '90%', marginLeft: '7%' }}>
+                <div id="inputtap" style={{ display: 'flex', flexDirection: 'row', width: '100%',marginLeft: '225px' }}>
+                    <input id="inputtap1" value={this.state.name} onChange={e => this.setState({ name: e.target.value })} />
+                    <input id="inputtap2" value={this.state.Address} onChange={e => this.setState({ Address: e.target.value })} />
+                    <input id="inputtap3" type="time" value={this.state.Time} onChange={e => this.setState({ Time: e.target.value })} />
+                    <input id="inputtap4" value={this.state.order} onChange={e => this.setState({ order: e.target.value })} />
+                    <Button id="inputtapbut" variant="primary" onClick={() => this.onSubmit()}>submit</Button>
                 </div>
                 <div id="info">
                     <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-                        <div id="id1" style={{ width: '13%' }} > id</div>
-                        <div id="name1" style={{ width: '15%' }} > name</div>
-                        <div id="address1" style={{ width: '14%' }} > address</div>
-                        <div id="time1" style={{ width: '14%' }} > time</div>
-                        <div id="order1" style={{ width: '15%' }} > order</div>
+                        <div id="id1" style={{ width: '12%' }} > id</div>
+                        <div id="name1" style={{ width: '10%' }} > name</div>
+                        <div id="address1" style={{ width: '22%' }} > address</div>
+                        <div id="time1" style={{ width: '5%' }} > time</div>
+                        <div id="order1" style={{ width: '20%' }} > order</div>
                     </div>
                 </div>
                 {this.renderTable()}

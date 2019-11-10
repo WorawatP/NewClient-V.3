@@ -4,9 +4,9 @@ const router = express.Router();
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
-let pandaTable = [{ id: 1, name: 'Worawat P', Address: '122/83', order: 'Yellow restaurant', Time: '15:30 pm' },
-{ id: 2, name: 'Sawadee Ja', Address: '21/22', order: 'Cha Korn', Time: '07:30 am' },
-{ id: 3, name: 'Worawat P', Address: '122/83', order: 'Cha Korn', Time: '08:45 pm' },
+let pandaTable = [{ id: 1, name: 'Worawat P', Address: '122/83', order: 'Yellow restaurant', Time: '15:30' },
+{ id: 2, name: 'Sawadee Ja', Address: '21/22', order: 'Cha Korn', Time: '07:30' },
+{ id: 3, name: 'Worawat P', Address: '122/83', order: 'Cha Korn', Time: '08:45' },
 ]
 
 

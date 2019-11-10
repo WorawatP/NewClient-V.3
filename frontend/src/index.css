@@ -24,18 +24,20 @@ code {
 #info2{
   margin-left: 90px;
 }
-#id1{
+#id1,#name1,#address1,#time1,#order1{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#name1{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#od1{
+  margin-left: 10px;
+  margin-right: 5px;
 }
-#address1{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#inputtap1,#inputtap2,#inputtap3,#inputtap4,#inputtapbut{
+  margin: 5px;
 }
-#time1{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#inputtap1,#inputtap2,#inputtap3,#inputtap4{
+  border-radius: 8px;
 }
-#order1{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.navbar-brand{
+  margin-left: 50px;
+  margin-right: 910px;
 }
