@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import * as services from '../../Services'
 import axios from 'axios';
 import { Modal, Button, Form } from 'react-bootstrap'
+
+
 export default class Home extends Component {
     constructor(props) {
         super(props);
@@ -74,8 +76,8 @@ export default class Home extends Component {
                     <div style={{ width: '13%' }} > {e.Address}</div>
                     <div style={{ width: '13.3%' }} > {e.Time}</div>
                     <div style={{ width: '13.5%' }} > {e.order}</div>
-                    <Button variant="outline-danger" onClick={() => this.deleteOrders(e.id)} style={{ width: '7%' }} > ลบ</Button>
-                    <Button variant="outline-warning" onClick={() => this.updateOrders(e.id, e)} style={{ width: '7%' }} > แก้ไข</Button>
+                    <Button variant="outline-danger" onClick={() => this.deleteOrders(e.id)} style={{ width: '7%' }} ><i class ="fa fa-trash"></i></Button>
+                    <Button variant="outline-warning" onClick={() => this.updateOrders(e.id, e)} style={{ width: '7%' }} ><i class="fa fa-edit"></i></Button>
                 </div>
             })
         }
